@@ -1,0 +1,23 @@
+.text-center {
+    font-size: xx-large;
+    padding-top: 3%;
+}
+
+.img-fluid {
+    align-content: center;
+    size: 50%;
+}
+
+.footer {
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: purple;
+}

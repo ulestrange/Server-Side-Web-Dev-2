@@ -1,0 +1,27 @@
+<h2> All about {{person.name}}</h2>
+
+<h3>Name: {{person.name}}</h3>
+
+<h4>Age: {{person.age}}</h4>
+
+<h5>Subscribers: {{person.subs}}</h5>
+
+<img src={{person.imageurl}} alt="photo of the person"
+
+<ul>
+  {{#each person.hobbies}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<a href='{{person.name}}/edit'>
+<button type="button" class="btn btn-primary">Edit</button></a>
+
+<a href='/staff/{{person.name}}/delete'
+ onclick="return confirm('are you sure you want to delete this person?');">
+<button type="button" class="btn btn-danger">Delete</button> </a>
+
+
+{{#if newName}}
+<h2>A person has been added to the database with the name of {{newName}}</h2>
+{{/if}}
