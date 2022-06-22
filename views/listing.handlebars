@@ -3,6 +3,9 @@
 {{/if}}
 
 
+{{!-- There will be  an issue if the name has a space
+this is due to url encoding and I covered this in week11 --}}
+
 <ul>
   {{#each personlist}}
     <li><a href=/staff/{{this.name}}>

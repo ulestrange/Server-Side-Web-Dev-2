@@ -2,12 +2,18 @@ const express = require('express');
 const router = express.Router();
 
 
+// Una you have linksforhome here but it is not been used anywhere
+
 const linksForHome = [{ url: 'itsligo.ie', text: 'IT Sligo Home Page' },
     { url: 'irishtimes.ie', text: 'The Irish Times' }
 ];
 
 
 router.get('/', (req, res) => {
+
+
+    // you have cookies etc here but are not using them to show anything
+    
 
     var message = "";
 

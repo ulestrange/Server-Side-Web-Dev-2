@@ -1,6 +1,11 @@
 <h2> Edit </h2>
 <form method="POST">
 
+{{!-- Una The form has issues because 2 elements have the same attribute 'name' 
+This causes it to be returned as an array rather than a single element which cannot
+them be saved in the database. --}}
+
+
     <div class="form-group">
         <label for='firstname'>First Name</label>
         <input type=text id='firstname' name='name' class='form-control' value={{person.name}} >

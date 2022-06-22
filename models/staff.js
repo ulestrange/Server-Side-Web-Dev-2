@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+// una - this model is exactly the same as my example.
+// there has been to attempt to rename things or make them more
+// suitable for your own domain.
+
 const staffSchema = new mongoose.Schema({
     name: String,
     dob: String,

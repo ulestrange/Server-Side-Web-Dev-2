@@ -60,6 +60,10 @@ router.get('/:name/edit', async(req, res) => {
         console.log('404 because person doesn\'t exist');
         res.render('404');
     } else {
+
+
+        // una - the handlebars file below doesn't exist
+        // I think you meant the edit handlebars file
         res.render('staffeditform', { person: person });
     }
 })
